@@ -27,7 +27,7 @@ Helm's [documentation](https://helm.sh/docs) to get started.
 Once Helm has been set up correctly, add the repo as follows:
 
 ```shell
-helm repo add crossplane-observability-demo-dashboards https://katharinasick.io/crossplane-observability-demo-dashboards
+helm repo add crossplane-observability-demo-dashboards https://katharinasick.github.io/crossplane-observability-demo-dashboards
 ```
 
 If you had already added this repo earlier, run `helm repo update` to retrieve
