@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: create-dashboard
+  name: {{ .Release.Name }}create-dashboard
   namespace: {{ .Release.Namespace }}
 spec:
   parallelism: 1
@@ -13,11 +13,11 @@ spec:
       volumes:
         - name: scripts
           configMap:
-            name: scripts
+            name: {{ .Release.Name }}-scripts
             defaultMode: 0777
         - name: dashboards
           configMap:
-            name: dashboards
+            name: {{ .Release.Name }}-dashboards
             defaultMode: 0777
       containers:
         - name: create-dashboard

@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: dashboards
-  namespace: dynatrace
+  name: {{ .Release.Name }}-dashboards
+  namespace: {{ .Release.Namespace }}
 data:
   {{- if .Values.dashboards.app.enabled }}
   app.json: |

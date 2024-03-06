@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: scripts
+  name: {{ .Release.Name }}-scripts
   namespace: {{ .Release.Namespace }}
 data:
   create-dashboard.sh: |
