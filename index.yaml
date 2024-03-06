@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   dashboards:
   - apiVersion: v2
+    created: "2024-03-06T20:13:14.953336315Z"
+    description: Dashboards to demo how to observe Crossplane and applications created
+      from it
+    digest: 134339bd36dd4842ec2b294e7627724dc2eca3b14270e60678c020676aa015f6
+    name: dashboards
+    type: application
+    urls:
+    - https://github.com/KatharinaSick/crossplane-observability-demo-dashboards/releases/download/dashboards-0.1.2/dashboards-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     created: "2024-03-06T15:39:42.173624493Z"
     description: Dashboards to demo how to observe Crossplane and applications created
       from it
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://github.com/KatharinaSick/crossplane-observability-demo-dashboards/releases/download/dashboards-0.1.0/dashboards-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-06T15:39:42.173657925Z"
+generated: "2024-03-06T20:13:14.953355401Z"
