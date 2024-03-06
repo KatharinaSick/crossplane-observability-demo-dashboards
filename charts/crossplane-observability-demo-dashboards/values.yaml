@@ -1,0 +1,41 @@
+# -- The namespace to deploy the dasbhoard to
+namespace: production
+
+# -- The secret that contains the OAuth client id & secret used to get at token for creating the dashboard. Expected secret keys: clientId & clientSecret
+oauthCredentialsSecretName: dynatrace-oauth-credentials
+
+# -- The dashboards that should be created
+dashboards:
+  # -- A dashboard that contains a collection of Crossplane metrics. Target group: Platform Engineers
+  crossplaneMetrics:
+    # -- Whether the dashboard is enabled or not.
+    enabled: true
+    # -- The title of the dasbhoard
+    title: Crossplane for Platform Engineers (crossplane-observability-demo)
+    # -- The name of the Kubernetes cluster to monitor with this dashboard
+    cluster: crossplane-observability-demo
+
+  # -- A dashboard that contains information about an application. Target group: Developers
+  app:
+    # -- Whether the dashboard is enabled or not
+    enabled: true
+    # -- The title of the dasbhoard
+    title: silly-demo (a-team-cluster/production)
+    # -- The name of the deployment to monitor
+    deployment: silly-demo
+    # -- The Kubernetes cluster the app is deployed to
+    cluster: a-team-cluster
+    # -- The Kubernetes namespace the app is deployed to
+    namespace: production
+
+    # -- A dashboard section with security information
+    security:
+      # -- Whether to add tiles related to security to the dashboard or not
+      enabled: true
+
+    # -- A dashboard section with database information
+    database:
+      # -- Whether to add tiles related to a database to the dashboard or not
+      enabled: true
+      # -- The name of the database to monitor
+      name: something
