@@ -3,4 +3,4 @@ name: dashboards
 description: Dashboards to demo how to observe Crossplane and applications created from it
 
 type: application
-version: 0.1.1
+version: 0.1.2

@@ -1025,8 +1025,9 @@ data:
               "columnWidths": {}
             }
           }
-        },
+        }
         {{- if .Values.dashboards.app.security.enabled }}
+        ,
         "13": {
           "type": "markdown",
           "title": "",
@@ -1280,9 +1281,10 @@ data:
               "columnWidths": {}
             }
           }
-        },
+        }
         {{- end }}
         {{- if .Values.dashboards.app.database.enabled }}
+        ,
         "18": {
           "type": "markdown",
           "title": "",
@@ -1769,7 +1771,7 @@ data:
               }
             }
           }
-        },
+        }
         {{- end }}
       },
       "layouts": {
@@ -1844,8 +1846,9 @@ data:
           "y": 16,
           "w": 12,
           "h": 10
-        },
+        }
         {{- if .Values.dashboards.app.security.enabled }}
+        ,
         "13": {
           "x": 13,
           "y": 1,
@@ -1875,9 +1878,10 @@ data:
           "y": 2,
           "w": 9,
           "h": 6
-        },
+        }
         {{- end }}
         {{- if .Values.dashboards.app.database.enabled }}
+        ,
         "18": {
           "x": 13,
           "y": 8,
@@ -1931,7 +1935,7 @@ data:
           "y": 23,
           "w": 11,
           "h": 3
-        },
+        }
         {{- end }}
       }
     }
