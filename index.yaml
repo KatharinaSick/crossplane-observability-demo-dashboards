@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  crossplane-observability-demo-dashboards:
+  - apiVersion: v2
+    created: "2024-03-06T15:18:16.434605562Z"
+    description: Dashboards to demo how to observe Crossplane and applications created
+      from it
+    digest: 5d7d81bdb7cce646e9d5924e79b8978b398623456cf0e2a7bed2ae8f63898f0f
+    name: crossplane-observability-demo-dashboards
+    type: application
+    urls:
+    - https://github.com/KatharinaSick/crossplane-observability-demo-dashboards/releases/download/crossplane-observability-demo-dashboards-1.0.0/crossplane-observability-demo-dashboards-1.0.0.tgz
+    version: 1.0.0
+generated: "2024-03-06T15:18:16.434614809Z"
