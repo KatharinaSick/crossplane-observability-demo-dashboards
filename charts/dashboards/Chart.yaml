@@ -1,5 +1,5 @@
 apiVersion: v2
-name: crossplane-observability-demo-dashboards
+name: dashboards
 description: Dashboards to demo how to observe Crossplane and applications created from it
 
 type: application
