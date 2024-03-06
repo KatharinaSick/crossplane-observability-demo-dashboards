@@ -1,6 +1,3 @@
-# -- The namespace to deploy the dasbhoard to
-namespace: production
-
 # -- The secret that contains the OAuth client id & secret used to get at token for creating the dashboard. Expected secret keys: clientId & clientSecret
 oauthCredentialsSecretName: dynatrace-oauth-credentials
 
